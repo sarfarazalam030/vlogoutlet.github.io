@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9131d6f12f.js" crossorigin="anonymous"></script>
+    <title>Posts</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        html,
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        nav {
+            background-color: white;
+
+
+        }
+
+        .nav_container {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: rgb(98, 96, 96);
+        }
+
+        .content ul {
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .content a {
+            text-decoration: none;
+            list-style: none;
+            color: rgb(98, 96, 96);
+            font-size: 20px;
+
+        }
+
+        footer {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            justify-content: space-between;
+            padding: 20px;
+
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 20px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+            font-weight: 600;
+
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        footer ul {
+            display: flex;
+            gap: 10px;
+
+        }
+
+        footer a {
+            text-decoration: none;
+            list-style: none;
+            color: gray;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav_container">
+            <div class="logo">
+                <h1>Vlogsoutlet</h1>
+            </div>
+            <div class="content">
+                <ul>
+                    <a href="#home">
+                        <li>Home</li>
+                    </a>
+                    <a href="#posts">
+                        <li>Posts</li>
+                    </a>
+                    <a href="https://instagram.com/vlogsoutlet?igshid=YmMyMTA2M2Y=" target="_blank">
+                        <li><i class="fa-brands fa-square-instagram"></i></li>
+                    </a>
+                    <a href="#twitter">
+                        <li><i class="fa-brands fa-square-twitter"></i></li>
+                    </a>
+                    <a href="#linkid">
+                        <li><i class="fa-brands fa-square-youtube"></i></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 9</div>
+                <img src="img/s1.jpg" style="width:100%">
+                <div class="text">Mall Shimla</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 9</div>
+                <img src="img/s2.jpg" style="width:100%">
+                <div class="text">Shimla Night</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 9</div>
+                <img src="img/s4.jpg" style="width:100%">
+                <div class="text">Longwood Shimla</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 9</div>
+                <img src="img/s5.jpg" style="width:100%">
+                <div class="text">National Highway 22 connects Shimla to the city of Chandigarh</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 9</div>
+                <img src="img/s6.jpg" style="width:100%">
+                <div class="text">Cityscape of Shimla in Himachal Pradesh in Indien</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 9</div>
+                <img src="img/s7.jpg" style="width:100%">
+                <div class="text">View of Shimla from Mall road</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 9</div>
+                <img src="img/s8.jpeg" style="width:100%">
+                <div class="text">St. Michael's Catholic Church, Shimla. Built in 1850</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">8 / 9</div>
+                <img src="img/s9.jpg" style="width:100%">
+                <div class="text">ASI monument</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">9 / 9</div>
+                <img src="img/s10.jpg" style="width:100%">
+                <div class="text">National Academy of Audits and Accounts</div>
+            </div>
+
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+        </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+    </section>
+    <footer>
+        <p>Vlogsoutlet 2022 &copy; copyright all rights reserved</p>
+        <ul>
+            <a href="https://instagram.com/vlogsoutlet?igshid=YmMyMTA2M2Y=" target="_blank">
+                <li><i class="fa-brands fa-square-instagram"></i></li>
+            </a>
+            <a href="#twitter">
+                <li><i class="fa-brands fa-square-twitter"></i></li>
+            </a>
+            <a href="#linkid">
+                <li><i class="fa-brands fa-square-youtube"></i></li>
+            </a>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

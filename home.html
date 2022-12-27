@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9131d6f12f.js" crossorigin="anonymous"></script>
+    <title>Home Page | Blog Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        html,
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        nav {
+            background-color: white;
+
+
+        }
+
+        .nav_container {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            justify-content: space-between;
+        }
+
+        .logo {
+            color: rgb(98, 96, 96);
+        }
+
+        .content ul {
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .content a {
+            text-decoration: none;
+            list-style: none;
+            color: rgb(98, 96, 96);
+            font-size: 20px;
+
+        }
+
+        .container {
+            max-width: 1000px;
+            display: flex;
+            gap: 70px;
+            margin: 80px auto;
+            align-items: center;
+        }
+
+        .container img {
+            width: 600px;
+            border-radius: 50px;
+        }
+
+        .container .img_content h1 {
+            font-size: 50px;
+        }
+
+        .container2 {
+            max-width: 1200px;
+            border: 2px solid rgb(224, 218, 218);
+            display: flex;
+            gap: 20px;
+            margin: 40px auto;
+            box-shadow: 5px 5px 10px grey;
+        }
+
+        .container2 img {
+            width: 400px;
+            height: 250px;
+        }
+
+        .img_content2 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 50px;
+        }
+
+        .img_content2 h1 {
+            font-size: 30px;
+        }
+
+        .img_content2 p {
+            font-size: 16px;
+            color: rgb(98, 96, 96);
+        }
+
+        .container2 .status {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container2 .status .read_btn {
+            border: none;
+            background-color: white;
+            font-weight: 600;
+        }
+
+        .card {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+
+        }
+
+        .card_container {
+            max-width: 350px;
+            /* border: 2px solid rgb(224, 218, 218); */
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 20px auto;
+            box-shadow: 2px 2px 5px grey;
+            transition: 0.2s ease-in;
+            align-items: center;
+        }
+
+        .card_container:hover {
+            cursor: pointer;
+            transform: scale(1.04);
+            transition: 0.5s ease-out;
+
+        }
+
+        .card_container img {
+            width: 320px;
+            height: 200px;
+            margin: 10px;
+        }
+
+        .img_content3 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .img_content3 h1 {
+            font-size: 20px;
+        }
+
+        .img_content3 p {
+            font-size: 12px;
+            color: rgb(98, 96, 96);
+        }
+
+        .card_container .status {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card_container .status .read_btn {
+            border: none;
+            background-color: white;
+            font-weight: 600;
+        }
+        .container3 {
+            max-width: 1200px;
+            border: 2px solid rgb(224, 218, 218);
+            display: flex;
+            gap: 20px;
+            margin: 40px auto;
+            box-shadow: 5px 5px 10px grey;
+            align-items: center;
+        }
+
+        .container3 img {
+            width: 600px;
+            /* height: 250px; */
+        }
+
+        .img_content4 {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            padding: 50px;
+        }
+
+        .img_content2 h1 {
+            font-size: 30px;
+        }
+
+        .img_content2 p {
+            font-size: 16px;
+            color: rgb(98, 96, 96);
+        }
+
+        .container3 .status {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container3 .status .read_btn {
+            border: none;
+            background-color: white;
+            font-weight: 600;
+        }
+        footer{
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            justify-content: space-between;
+            padding: 20px;
+
+        }
+        footer ul{
+            display: flex;
+            gap: 10px;
+
+        }
+        footer a{
+            text-decoration: none;
+            list-style: none;
+            color: gray;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav_container">
+            <div class="logo">
+                <h1>Vlogsoutlet</h1>
+            </div>
+            <div class="content">
+                <ul>
+                    <a href="#home">
+                        <li>Home</li>
+                    </a>
+                    <a href="post.html">
+                        <li>Posts</li>
+                    </a>
+                    <a href="https://instagram.com/vlogsoutlet?igshid=YmMyMTA2M2Y=" target="_blank">
+                        <li><i class="fa-brands fa-square-instagram"></i></li>
+                    </a>
+                    <a href="#twitter">
+                        <li><i class="fa-brands fa-square-twitter"></i></li>
+                    </a>
+                    <a href="#linkid">
+                        <li><i class="fa-brands fa-square-youtube"></i></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+
+            <div class="img_content">
+                <h1>Make Zone Better !</h1>
+                <p>Why Better Zone important?</p>
+            </div>
+            <div class="img">
+                <img src="img/img1.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="img_content2">
+                <h1>Long eastablished</h1>
+                <p>Is is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that...</p>
+                <div class="status">
+                    <p>25 Dec 2022</p>
+                    <button class="read_btn">Read More</button>
+                </div>
+            </div>
+            <div class="img">
+                <img src="img/img2.webp" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="card">
+        <div class="card_container">
+
+            <div class="img">
+                <img src="img/mountainjpg.jpg" alt="">
+            </div>
+            <div class="img_content3">
+                <h1>Mountains</h1>
+                <p>“The mountains are calling, and I must go.” John Muir perfectly sums up our feelings about these
+                    majestic natural wonders. Mountains have always been a source of awe and beauty, and sometimes we
+                    don't have the words to capture how much we admire them. Nature quotes can help put into words how
+                    much exhilarating it is to look at mountains, climb and hike mountains, ski mountains—and even how
+                    much we enjoy them as a powerful metaphor for hard work, exploration, and victory in literature,
+                    art, and music...</p>
+                <div class="status">
+                    <p>25 Dec 2022</p>
+                    <button class="read_btn">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="card_container">
+
+            <div class="img">
+                <img src="img/cloud.jpg" alt="">
+            </div>
+            <div class="img_content3">
+                <h1>Sky</h1>
+                <p>Once the realization is accepted that even between the closest human beings infinite distances
+                    continue, a wonderful living side by side can grow, if they succeed in loving the distance between
+                    them which makes it possible for each to see the other whole against the sky...
+                </p>
+                <div class="status">
+                    <p>25 Dec 2022</p>
+                    <button class="read_btn">Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="card_container">
+
+            <div class="img">
+                <img src="img/sea.jpg" alt="">
+            </div>
+            <div class="img_content3">
+                <h1>Sea</h1>
+                <p>At the beach, life is different. Time doesn’t move hour to hour but mood to moment. We live by the
+                    currents, plan by the tides and follow the sun..</p>
+                <div class="status">
+                    <p>25 Dec 2022</p>
+                    <button class="read_btn">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container3">
+            <div class="img_content4">
+                <h1>Nature</h1>
+                <p>Nature is the ultimate source of our living. Both living and non-living things include nature, and
+                    everyone is interdependent, which helps maintain the ecosystem. Plants, animals, and humans all
+                    depend on nature for their survival. It supplies oxygen, sunlight, soil, water, and other necessary
+                    components.</p>
+                <div class="status">
+                    <p>25 Dec 2022</p>
+                    <button class="read_btn">Read More</button>
+                </div>
+            </div>
+            <div class="img">
+                <img src="img/nature.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Vlogsoutlet 2022 &copy; copyright all rights reserved</p>
+        <ul>
+            <a href="https://instagram.com/vlogsoutlet?igshid=YmMyMTA2M2Y=" target="_blank">
+                <li><i class="fa-brands fa-square-instagram"></i></li>
+            </a>
+            <a href="#twitter">
+                <li><i class="fa-brands fa-square-twitter"></i></li>
+            </a>
+            <a href="#linkid">
+                <li><i class="fa-brands fa-square-youtube"></i></li>
+            </a>
+        </ul>
+    </footer>
+
+</body>
+
+</html>
